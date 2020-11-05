@@ -461,18 +461,20 @@ Tee luokka `Sarja`, joka toimii seuraavasti
 
 ```python
 dexter = Sarja("Dexter", 8, ["Crime", "Drama", "Mystery", "Thriller"])
+print("Sarjan nimi: " + dexter.nimi)
 print(dexter)
 ```
 
 <sample-output>
 
+Sarjan nimi: Dexter
 Dexter (8 esityskautta)
 genret: Crime, Drama, Mystery, Thriller
 ei arvosteluja
 
 </sample-output>
 
-Konstruktorissa siis asetetaan sarjan nimi, sen esityskausien lukumäärä sekä lista, joka kertoo mihin genreen sarja kuuluu.
+Konstruktorissa siis asetetaan sarjan nimi, sen esityskausien lukumäärä sekä lista, joka kertoo mihin genreen sarja kuuluu. Huom: käytä luokkaa määritellessäsi ainakin attribuutin nimeä `nimi`, kuten käyttöesimerkissä esitellään. 
 
 **Vihje:** merkkijonotaulukko saadaan muutettua haluttuja välimerkkejä sisältäväksi merkkijonoksi metodin `join` avulla seuraavasti:
 
